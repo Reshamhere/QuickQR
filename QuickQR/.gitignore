@@ -1,0 +1,14 @@
+# Ignore build files
+build/
+DerivedData/
+
+# Ignore personal files
+config.plist
+
+
+# Ignore other common files
+*.xcuserdata
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+
+
