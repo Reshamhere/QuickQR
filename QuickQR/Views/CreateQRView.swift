@@ -267,11 +267,12 @@ struct InputField: View {
                 
             }
             TextField(placeholder, text: $text, axis: axis)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
                 .textInputAutocapitalization(.never)
                 .font(.system(size: 18))
                 .padding(.horizontal)
-                .padding(.vertical, 5)
+                .frame(width: .infinity, height: 40)
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray.opacity(0.7), lineWidth: 1))
+                .padding(.horizontal)
             
         }
     }
