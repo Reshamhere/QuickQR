@@ -198,7 +198,9 @@ struct CreateQRView: View {
         case .Contact:
             return "Name : \(name) \n Phone Number: \(phoneNumber) \n Email: \(email)"
         case .Email:
-            return "Email : \(email)"
+            let encodedSubject = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+            let encodedMessage = message.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+            return "mailto:\(email)?subject=\(encodedSubject)&body=\(encodedMessage)"
         }
     }
     
