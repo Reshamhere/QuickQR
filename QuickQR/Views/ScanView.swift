@@ -12,12 +12,14 @@ import AlertToast
 
 struct ScanView : View {
     
+    @StateObject var viewmodel : ScanViewViewModel = ScanViewViewModel()
+    
     @State var isPresentingScanner = false
     @State var isPresentingAlert = false
-    @State var alertMessage: String = ""
+//    @State var alertMessage: String = ""
     @State var scannedCode: String = "Scan a QR code to get started!"
     
-    @State var copied : Bool = false
+//    @State var copied : Bool = false
 
     
     var scannerSheet : some View {
@@ -51,39 +53,17 @@ struct ScanView : View {
             .alert(isPresented: $isPresentingAlert, content: {
                 Alert(title: Text("alert"),
                       message: Text(scannedCode),
-                      primaryButton: isValidUrl(scannedCode) ? .default(Text("Open"), action: {openURL(scannedCode)}) : .default(Text("Copy"), action: {copytoClipboard(scannedCode)}),
-                      secondaryButton: .default(Text("Copy"), action: {copytoClipboard(scannedCode)})
+                      primaryButton: viewmodel.isValidUrl(scannedCode) ? .default(Text("Open"), action: {viewmodel.openURL(scannedCode)}) : .default(Text("Copy"), action: {viewmodel.copytoClipboard(scannedCode)}),
+                      secondaryButton: .default(Text("Copy"), action: {viewmodel.copytoClipboard(scannedCode)})
                 )
             })
-            .toast(isPresenting: $copied) {
+            .toast(isPresenting: $viewmodel.copied) {
                 AlertToast(displayMode: .hud, type: .regular, title: "Copied to Clipboard")
             }
             
             Spacer()
             Spacer()
         }
-        
-    }
-    
-    func isValidUrl(_ str : String) -> Bool {
-        guard let url = URL(string: str) else {
-            return false
-        }
-        return UIApplication.shared.canOpenURL(url)
-    }
-    
-    func openURL(_ urlString : String) {
-        guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url)
-        else {
-            alertMessage = "Invalid URL"
-            return
-        }
-        UIApplication.shared.open(url)
-    }
-    
-    func copytoClipboard(_ str : String) {
-        UIPasteboard.general.string = str
-        copied = true
         
     }
 }

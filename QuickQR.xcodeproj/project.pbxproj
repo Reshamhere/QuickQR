@@ -9,28 +9,40 @@
 /* Begin PBXBuildFile section */
 		50255D4C2D285F0C00C300EF /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 50255D4B2D285F0C00C300EF /* AlertToast */; };
 		50255D4E2D2898DE00C300EF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 50255D4D2D2898DE00C300EF /* .gitignore */; };
+		503CAA0A2D297794002ED65F /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 503CAA092D297794002ED65F /* QRCode */; };
 		5058ED982D0FE41A00FF555A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058ED972D0FE41A00FF555A /* HomeView.swift */; };
+		5059FDA02D2E80CB0026A999 /* ScanViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5059FD9F2D2E80CB0026A999 /* ScanViewViewModel.swift */; };
+		5071BF012D2DC88900941F06 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071BF002D2DC88900941F06 /* SheetView.swift */; };
+		5071BF032D2DE90300941F06 /* QrTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5071BF022D2DE90300941F06 /* QrTypes.swift */; };
 		5086703E2D14375900915400 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086703D2D14375900915400 /* ScanView.swift */; };
 		508670402D1437E100915400 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086703F2D1437E100915400 /* HistoryView.swift */; };
 		508670422D157AEE00915400 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508670412D157AEE00915400 /* TabView.swift */; };
 		508EDC5D2D26C5CD006A932A /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 508EDC5C2D26C5CD006A932A /* CodeScanner */; };
+		5097DFFD2D2924890087FDA6 /* CreateQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097DFFC2D2924890087FDA6 /* CreateQRView.swift */; };
+		50BBD8F92D2C795800D3B5F7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 50BBD8F82D2C795800D3B5F7 /* Lottie */; };
 		50CBDC082D0ACF2600B9FA98 /* QuickQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBDC072D0ACF2600B9FA98 /* QuickQRApp.swift */; };
 		50CBDC0A2D0ACF2600B9FA98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBDC092D0ACF2600B9FA98 /* ContentView.swift */; };
 		50CBDC0C2D0ACF2700B9FA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CBDC0B2D0ACF2700B9FA98 /* Assets.xcassets */; };
 		50CBDC0F2D0ACF2700B9FA98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CBDC0E2D0ACF2700B9FA98 /* Preview Assets.xcassets */; };
+		50FBF0892D318E7C00DF5609 /* QRCustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBF0882D318E7B00DF5609 /* QRCustomizationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50255D4D2D2898DE00C300EF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5058ED972D0FE41A00FF555A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5059FD9F2D2E80CB0026A999 /* ScanViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewViewModel.swift; sourceTree = "<group>"; };
+		5071BF002D2DC88900941F06 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		5071BF022D2DE90300941F06 /* QrTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrTypes.swift; sourceTree = "<group>"; };
 		5086703D2D14375900915400 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		5086703F2D1437E100915400 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		508670412D157AEE00915400 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		5097DFFC2D2924890087FDA6 /* CreateQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQRView.swift; sourceTree = "<group>"; };
 		50CBDC042D0ACF2600B9FA98 /* QuickQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CBDC072D0ACF2600B9FA98 /* QuickQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickQRApp.swift; sourceTree = "<group>"; };
 		50CBDC092D0ACF2600B9FA98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50CBDC0B2D0ACF2700B9FA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50CBDC0E2D0ACF2700B9FA98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50FBF0882D318E7B00DF5609 /* QRCustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCustomizationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,8 @@
 			files = (
 				508EDC5D2D26C5CD006A932A /* CodeScanner in Frameworks */,
 				50255D4C2D285F0C00C300EF /* AlertToast in Frameworks */,
+				503CAA0A2D297794002ED65F /* QRCode in Frameworks */,
+				50BBD8F92D2C795800D3B5F7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +100,7 @@
 		50CBDC152D0B106300B9FA98 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5071BF022D2DE90300941F06 /* QrTypes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +108,7 @@
 		50CBDC172D0B108500B9FA98 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5059FD9F2D2E80CB0026A999 /* ScanViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -105,6 +121,9 @@
 				5086703D2D14375900915400 /* ScanView.swift */,
 				5086703F2D1437E100915400 /* HistoryView.swift */,
 				508670412D157AEE00915400 /* TabView.swift */,
+				5097DFFC2D2924890087FDA6 /* CreateQRView.swift */,
+				5071BF002D2DC88900941F06 /* SheetView.swift */,
+				50FBF0882D318E7B00DF5609 /* QRCustomizationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +156,8 @@
 			packageProductDependencies = (
 				508EDC5C2D26C5CD006A932A /* CodeScanner */,
 				50255D4B2D285F0C00C300EF /* AlertToast */,
+				503CAA092D297794002ED65F /* QRCode */,
+				50BBD8F82D2C795800D3B5F7 /* Lottie */,
 			);
 			productName = QuickQR;
 			productReference = 50CBDC042D0ACF2600B9FA98 /* QuickQR.app */;
@@ -169,6 +190,8 @@
 			packageReferences = (
 				508EDC5B2D26C5CD006A932A /* XCRemoteSwiftPackageReference "CodeScanner" */,
 				50255D4A2D285F0C00C300EF /* XCRemoteSwiftPackageReference "AlertToast" */,
+				503CAA082D297794002ED65F /* XCRemoteSwiftPackageReference "qrcode" */,
+				50BBD8F72D2C795800D3B5F7 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 50CBDC052D0ACF2600B9FA98 /* Products */;
 			projectDirPath = "";
@@ -199,9 +222,14 @@
 			files = (
 				5058ED982D0FE41A00FF555A /* HomeView.swift in Sources */,
 				5086703E2D14375900915400 /* ScanView.swift in Sources */,
+				5071BF012D2DC88900941F06 /* SheetView.swift in Sources */,
 				508670402D1437E100915400 /* HistoryView.swift in Sources */,
+				5097DFFD2D2924890087FDA6 /* CreateQRView.swift in Sources */,
+				5071BF032D2DE90300941F06 /* QrTypes.swift in Sources */,
+				5059FDA02D2E80CB0026A999 /* ScanViewViewModel.swift in Sources */,
 				50CBDC0A2D0ACF2600B9FA98 /* ContentView.swift in Sources */,
 				508670422D157AEE00915400 /* TabView.swift in Sources */,
+				50FBF0892D318E7C00DF5609 /* QRCustomizationView.swift in Sources */,
 				50CBDC082D0ACF2600B9FA98 /* QuickQRApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,12 +448,28 @@
 				minimumVersion = 1.3.9;
 			};
 		};
+		503CAA082D297794002ED65F /* XCRemoteSwiftPackageReference "qrcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/qrcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
 		508EDC5B2D26C5CD006A932A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.5.2;
+			};
+		};
+		50BBD8F72D2C795800D3B5F7 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -436,10 +480,20 @@
 			package = 50255D4A2D285F0C00C300EF /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
 		};
+		503CAA092D297794002ED65F /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 503CAA082D297794002ED65F /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCode;
+		};
 		508EDC5C2D26C5CD006A932A /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 508EDC5B2D26C5CD006A932A /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		50BBD8F82D2C795800D3B5F7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50BBD8F72D2C795800D3B5F7 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

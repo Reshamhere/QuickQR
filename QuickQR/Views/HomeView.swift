@@ -28,7 +28,7 @@ struct HomeView: View {
                 
                 HStack {
                     NavigationLink {
-
+                        CreateQRView()
                     } label: {
                         VStack{
                             Image(systemName: "qrcode")
