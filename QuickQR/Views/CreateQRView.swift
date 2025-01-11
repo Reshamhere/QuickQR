@@ -169,6 +169,20 @@ struct CreateQRView: View {
                     }
                     .padding(.trailing, 5)
                     .disabled(isInputValid() ? false : true)
+                    
+                    Button(action: {}) {
+                        Image(systemName: "bookmark")
+                            .font(.system(size: 25))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .frame(width: 30)
+                            .padding(8.5)
+                            .background(isInputValid() ? .blue: .gray)
+                            .cornerRadius(100)
+                    }
+                    .padding(.trailing, 5)
+                    .disabled(isInputValid() ? false : true)
+                    
                 }
                 
                 Spacer()
