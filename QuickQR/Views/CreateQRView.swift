@@ -7,6 +7,7 @@
 
 import SwiftUI
 import QRCode
+import UIKit
 
 struct CreateQRView: View {
     
@@ -24,6 +25,9 @@ struct CreateQRView: View {
     @State private var email: String = ""
     @State private var subject: String = ""
     @State private var message: String = ""
+    
+    @State private var qrBgColor: Color = .white
+    @State private var qrFgColor: Color = .black
 
     var body: some View {
         ScrollView {
@@ -137,7 +141,10 @@ struct CreateQRView: View {
                 /// Customize section
                 else {
                     VStack {
-                        
+                        ColorPicker("Select Background Color", selection: $qrBgColor)
+                            .padding()
+                        ColorPicker("Select Foreground Color", selection: $qrFgColor)
+                            .padding()
                     }
                 }
                 
@@ -194,8 +201,16 @@ struct CreateQRView: View {
     private func generateQRCode() -> UIImage {
         do {
             let qrString = qrContent()
-             let document = try QRCode.Document(utf8String: qrString)
+            let document = try QRCode.Document(utf8String: qrString)
+
+            let bgColor = qrBgColor.cgColorRepresentation ?? CGColor(red: 1, green: 1, blue: 1, alpha: 1) // White
+            let fgColor = qrFgColor.cgColorRepresentation ?? CGColor(red: 0, green: 0, blue: 0, alpha: 1) // Black
+            
+            document.design.backgroundColor(bgColor)
+            document.design.foregroundColor(fgColor)
+            
             let cgImage = try document.cgImage(dimension: 400)
+            
             return UIImage(cgImage: cgImage)
         } catch {
             print("Error generating QR code: \(error)")
@@ -289,5 +304,12 @@ struct InputField: View {
                 .padding(.horizontal)
             
         }
+    }
+}
+
+
+extension Color {
+    var cgColorRepresentation: CGColor? {
+        UIColor(self).cgColor
     }
 }
