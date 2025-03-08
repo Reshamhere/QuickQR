@@ -4,7 +4,7 @@ DerivedData/
 
 # Ignore personal files
 config.plist
-
+GoogleService-info.plist
 
 # Ignore other common files
 *.xcuserdata
