@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @StateObject var AuthVM: AuthenticationViewModel = AuthenticationViewModel()
+    
     let bgColor = Color(red: 249/255, green: 250/255, blue: 251/255)
     
     @State private var selection = 1
@@ -21,10 +23,12 @@ struct ContentView: View {
                 switch selection {
                 case 1:
                     HomeView()
-                case 2:
+                case 2:    
                     ScanView()
                 case 3:
                     HistoryView()
+                case 4:
+                    ProfileView()
                 default:
                     HomeView()
                 }

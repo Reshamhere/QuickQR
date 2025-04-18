@@ -129,10 +129,13 @@ struct CreateQRView: View {
                 /// Customize section
                 else {
                     VStack {
-                        ColorPicker("Select Background Color", selection: $createQrVm.qrBgColor)
-                            .padding()
-                        ColorPicker("Select Foreground Color", selection: $createQrVm.qrFgColor)
-                            .padding()
+                        HStack{
+                            ColorPicker("Background", selection: $createQrVm.qrBgColor)
+                                .padding()
+                            ColorPicker("Foreground", selection: $createQrVm.qrFgColor)
+                                .padding()
+                        }
+                        
                     }
                 }
                 

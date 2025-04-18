@@ -66,6 +66,21 @@ struct TabView: View {
             }
             Spacer()
             
+            VStack {
+                Button {
+                    selection = 4
+                } label: {
+                    Image(systemName: "person.crop.circle")
+                        .font(.system(size: 25))
+                        .foregroundStyle(selection == 4 ? .blue : .gray)
+                }
+                Text("Profile")
+                    .font(.system(size: 14))
+                    .padding(.top, 1)
+                    .foregroundStyle(selection == 4 ? .blue : .gray)
+            }
+            Spacer()
+            
         } /// End of HStack
         .padding()
         .padding(.bottom, 10)
